@@ -1,3 +1,6 @@
+D:\UMM\POS\obj\Debug\POS.csproj.AssemblyReference.cache
+D:\UMM\POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
+D:\UMM\POS\bin\contenido\css\estilo\line-awesome.css
 D:\UMM\POS\bin\POS.dll.config
 D:\UMM\POS\bin\POS.dll
 D:\UMM\POS\bin\POS.pdb
@@ -52,9 +55,6 @@ D:\UMM\POS\bin\roslyn\VBCSCompiler.exe
 D:\UMM\POS\bin\roslyn\VBCSCompiler.exe.config
 D:\UMM\POS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\UMM\POS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\UMM\POS\obj\Debug\POS.csproj.AssemblyReference.cache
-D:\UMM\POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
 D:\UMM\POS\obj\Debug\POS.csproj.Up2Date
 D:\UMM\POS\obj\Debug\POS.dll
 D:\UMM\POS\obj\Debug\POS.pdb
-D:\UMM\POS\bin\contenido\css\estilo\line-awesome.css

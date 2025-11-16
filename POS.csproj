@@ -67,7 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="contenido\css\estilo\agregar-usuario.css" />
     <Content Include="contenido\css\estilo\catalogos.css" />
+    <Content Include="contenido\css\estilo\control-usuarios.css" />
     <Content Include="contenido\css\estilo\line-awesome.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -76,13 +78,17 @@
     <Content Include="contenido\css\estilo\punto_venta.css" />
     <Content Include="contenido\css\estilo\ventas.css" />
     <Content Include="contenido\imagenes\fondo.jpg" />
+    <Content Include="contenido\javascript\agregarusuario.js" />
+    <Content Include="contenido\javascript\control-usuarios.js" />
     <Content Include="contenido\javascript\jquery-3.7.1.js" />
     <Content Include="contenido\javascript\menu.js" />
     <Content Include="contenido\javascript\puntoventa.js" />
     <Content Include="contenido\javascript\script.js" />
     <Content Include="contenido\javascript\wfsuma.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="vista\wfAgregarUsuario.aspx" />
     <Content Include="vista\wfCatalogos.aspx" />
+    <Content Include="vista\wfControlUsuarios.aspx" />
     <Content Include="vista\wfMenu.aspx" />
     <Content Include="vista\wfPuntodeVenta.aspx" />
     <Content Include="vista\wfVentas.aspx" />
@@ -104,12 +110,26 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vista\wfAgregarUsuario.aspx.cs">
+      <DependentUpon>wfAgregarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vista\wfAgregarUsuario.aspx.designer.cs">
+      <DependentUpon>wfAgregarUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="vista\wfCatalogos.aspx.cs">
       <DependentUpon>wfCatalogos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="vista\wfCatalogos.aspx.designer.cs">
       <DependentUpon>wfCatalogos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vista\wfControlUsuarios.aspx.cs">
+      <DependentUpon>wfControlUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vista\wfControlUsuarios.aspx.designer.cs">
+      <DependentUpon>wfControlUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="vista\wfMenu.aspx.cs">
       <DependentUpon>wfMenu.aspx</DependentUpon>
@@ -146,6 +166,7 @@
   <ItemGroup>
     <Folder Include="contenido\css\fonts\" />
     <Folder Include="datos\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

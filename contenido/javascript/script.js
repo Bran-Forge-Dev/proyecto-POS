@@ -1,13 +1,30 @@
-﻿document.getElementById("btnlogin").addEventListener("click", function () {
-    // Validación
-    const usuario = document.getElementById("usuario").value.trim();
-    const password = document.getElementById("password").value.trim();
+﻿document.addEventListener("DOMContentLoaded", function () {
+    const btnLogin = document.getElementById("btnlogin");
+    const mensajeError = document.getElementById("mensajeError");
 
-    if (usuario === "admin" && password === "1234") {
-        window.location.href = "vista/wfMenu.aspx"; // redirige al menú principal
-    } else {
-        alert("Usuario o contraseña incorrectos.");
-    }
+    btnLogin.addEventListener("click", function () {
+        const usuarioInput = document.getElementById("usuario");
+        const passwordInput = document.getElementById("password");
+
+        const usuario = usuarioInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        // Oculta mensaje previo
+        mensajeError.style.display = "none";
+        mensajeError.textContent = "";
+
+        if (usuario === "admin" && password === "1234") {
+            window.location.href = "vista/wfMenu.aspx"; // Redirige al menú
+        } else {
+            mensajeError.textContent = "Usuario o contraseña incorrectos.";
+            mensajeError.style.display = "block";
+
+            // Borra los campos
+            usuarioInput.value = "";
+            passwordInput.value = "";
+
+            // Coloca el cursor nuevamente en el campo de usuario
+            usuarioInput.focus();
+        }
+    });
 });
-
-

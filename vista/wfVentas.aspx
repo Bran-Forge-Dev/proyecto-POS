@@ -14,7 +14,7 @@
 <body>
     <form id="form1" runat="server">
    <header class="encabezado">
-    <a href="/Default.aspx" class="btn-regresar">
+    <a href="/vista/wfMenu.aspx" class="btn-regresar">
     <i class="las la-arrow-left"></i></a>
     <h1 class="titulo">NeoVenta</h1>
   </header>
@@ -28,7 +28,6 @@
           <i class="las la-shopping-cart"></i>
         </div>
         <a href="wfPuntodeVenta.aspx" class="btn-card">Punto de Venta</a>
-        <!--<button class="boton">Punto venta</button>-->
       </div>
 
       <div class="card">
@@ -36,7 +35,6 @@
           <i class="las la-lock-open"></i>
         </div>
         <a href="wfVentas.aspx" class="btn-card">Abrir corte</a>
-        <!--<button class="boton">Abrir corte</button>-->
       </div>
 
       <div class="card">
@@ -44,7 +42,6 @@
           <i class="las la-lock"></i>
         </div>
         <a href="wfVentas.aspx" class="btn-card">Cerrar corte</a>
-        <!--<button class="boton">Cerrar corte</button>-->
       </div>
     </div>
   </main>

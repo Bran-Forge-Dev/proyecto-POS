@@ -15,10 +15,12 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Logo a la izquierda, logout a la derecha */
     align-items: center;
     padding: 25px 40px;
     border-bottom: 2px solid #c79a32;
+    background-color: #fff; /* asegura contraste */
+    position: relative; /* habilita posicionamiento absoluto si lo necesitas */
 }
 
 .logo {
@@ -29,14 +31,20 @@ header {
 
 .logout {
     font-weight: bold;
-    color: #c70000;
+    color: #c70000; /* rojo intenso */
     text-decoration: none;
     font-size: 16px;
-    transition: color 0.3s;
+    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
 }
 
     .logout:hover {
         color: #900000;
+        background-color: #fbeaea;
+        transform: scale(1.05);
+        text-decoration: underline;
     }
 
 main {

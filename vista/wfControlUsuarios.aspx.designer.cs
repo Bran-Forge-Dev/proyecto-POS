@@ -11,7 +11,7 @@ namespace POS.vista
 {
 
 
-    public partial class wfMenu
+    public partial class wfControlUsuarios
     {
 
         /// <summary>

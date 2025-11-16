@@ -1,52 +1,57 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfCatalogos.aspx.cs" Inherits="POS.vista.wfCatalogos" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link href="/contenido/css/estilo/catalogos.css" rel="stylesheet" />
-  <link href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" rel="stylesheet" />
-
-
-    <title>NeoVenta - Catálogos</title>
+<link href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" rel="stylesheet" />
+<title>NeoVenta - Catálogos</title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <header>
-        <h1>NeoVenta</h1>
-    </header>
-        <h2>Catálogos</h2>
+        <header class="encabezado">
+            <!-- Botón regresar -->
+            <a href="wfMenu.aspx" class="btn-regresar">
+                <i class="las la-arrow-left"></i>
+            </a>
 
-    <main class="catalogos-container">
-        <!-- Tarjeta Usuarios -->
-        <div class="card">
-            <div class="icon-circle">
-                <i class="fas fa-user fa-2x"></i>
-            </div>
-            <p>Vista de los usuarios</p>
-            <button class="btn-card">Usuarios</button>
-        </div>
+            <!-- Logo centrado -->
+            <div class="logo">NeoVenta</div>
+        </header>
 
-        <!-- Tarjeta Productos -->
-        <div class="card">
-            <div class="icon-circle">
-                <i class="fas fa-shopping-cart fa-2x"></i>
-            </div>
-            <p>Dar alta/baja/editar productos<br>Visualización de productos</p>
-            <button class="btn-card">Productos</button>
-        </div>
+        <!-- Título principal -->
+        <h2 class="titulo">Catálogos</h2>
 
-        <!-- Tarjeta Proveedor -->
-        <div class="card">
-            <div class="icon-circle">
-                <i class="fas fa-truck fa-2x"></i>
+        <main class="catalogos-container">
+            <!-- Tarjeta Usuarios -->
+            <div class="card">
+                <div class="icon-circle">
+                    <i class="las la-user fa-2x"></i>
+                </div>
+                <p>Vista de los usuarios</p>
+                <a href="wfControlUsuarios.aspx" class="btn-card">Usuarios</a>
             </div>
-            <p>Dar alta/baja/editar proveedores<br>Visualización de proveedores</p>
-            <button class="btn-card">Proveedor</button>
-        </div>
-    </main>
+
+            <!-- Tarjeta Productos -->
+            <div class="card">
+                <div class="icon-circle">
+                    <i class="las la-shopping-cart fa-2x"></i>
+                </div>
+                <p>Dar alta/baja/editar productos<br/>Visualización de productos</p>
+                <a href="#" class="btn-card">Productos</a>
+            </div>
+
+            <!-- Tarjeta Proveedor -->
+            <div class="card">
+                <div class="icon-circle">
+                    <i class="las la-truck fa-2x"></i>
+                </div>
+                <p>Dar alta/baja/editar proveedores<br/>Visualización de proveedores</p>
+                <a href="#" class="btn-card">Proveedor</a>
+            </div>
+        </main>
     </form>
 </body>
 </html>

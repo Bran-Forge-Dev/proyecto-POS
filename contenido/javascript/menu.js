@@ -1,5 +1,5 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
-    // Selecciona el enlace "Cerrar sesión"
+    // Selecciona el enlace Cerrar sesión
     const logoutLink = document.querySelector(".logout");
 
     if (logoutLink) {
