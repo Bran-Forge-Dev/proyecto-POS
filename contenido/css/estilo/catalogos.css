@@ -14,14 +14,14 @@ header {
     justify-content: center; /* centra el logo/título */
     align-items: center;
     position: relative; /* permite posicionar el botón */
-    padding: 25px 40px;
+    padding: 12px 40px;
     border-bottom: 2px solid #c79a32;
     background-color: #fff;
 }
 
     /* Logo/Título principal dentro del header */
     header .logo {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 700;
         color: #000;
         text-align: center;

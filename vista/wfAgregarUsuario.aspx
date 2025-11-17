@@ -33,7 +33,9 @@
             </div>
             <div class="fila">
                 <label>Rol</label>
-                <input type="text" id="rol" />
+                <select id="rol" >
+                    <option value="" disabled selected>Selecciona un rol</option>
+                </select>
             </div>
             <div class="fila-doble">
                 <div class="sub-fila">
