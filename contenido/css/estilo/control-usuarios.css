@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-/* ---------------- ENCABEZADO ---------------- */
+/* Encabezado */
 
 .encabezado {
     display: flex;
@@ -47,7 +47,7 @@ body {
     letter-spacing: 2px;
 }
 
-/* ---------------- TÍTULO ---------------- */
+/* Titulo */
 
 .titulo {
     text-align: center;
@@ -56,7 +56,7 @@ body {
     font-weight: 700;
 }
 
-/* ---------------- BOTÓN AGREGAR ---------------- */
+/* Botón agregar */
 
 .contenedor-agregar {
     width: 90%;
@@ -65,7 +65,7 @@ body {
     justify-content: flex-end;
 }
 
-/* ✔ Convertimos el <a> en un botón real */
+/* Editar el <a> a un botón real */
 .btn-agregar {
     background: #d1a646;
     color: white;
@@ -78,9 +78,8 @@ body {
     gap: 8px;
     align-items: center;
     transition: 0.2s ease;
-    /* ---- ADICIONES NECESARIAS ---- */
-    text-decoration: none; /* evita subrayado */
-    display: inline-flex; /* para que funcione como botón */
+    text-decoration: none; /* quita subrayado */
+    display: inline-flex;
 }
 
     .btn-agregar i {
@@ -91,7 +90,7 @@ body {
         background: #c59834;
     }
 
-/* ---------------- TABLA RESPONSIVA ---------------- */
+/* Tabla */
 
 .tabla-scroll {
     width: 90%;
@@ -122,7 +121,7 @@ body {
         height: 42px;
     }
 
-/* ICONOS */
+/* Iconos */
 .col-icono {
     width: 70px;
 }
@@ -137,7 +136,7 @@ body {
         color: #a56a00;
     }
 
-/* ---------------- RESPONSIVIDAD ---------------- */
+/* Responsivo */
 
 @media (max-width: 900px) {
     .logo,

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
+    <!-- Encabezado -->
     <header class="encabezado">
         <a href="wfCatalogos.aspx" class="btn-regresar">
             <i class="las la-arrow-left"></i>
@@ -18,10 +18,10 @@
         <h1 class="logo">NeoVenta</h1>
     </header>
 
-    <!-- TÍTULO PRINCIPAL -->
+    <!-- Titulo-->
     <h2 class="titulo">Control de usuarios</h2>
 
-    <!-- BOTÓN AGREGAR -->
+    <!-- Botón agregar-->
     <div class="contenedor-agregar">
         <a href="wfAgregarUsuario.aspx" class="btn-agregar">
             <i class="las la-plus-square"></i>
@@ -29,7 +29,7 @@
         </a>
     </div>
 
-    <!-- TABLA -->
+    <!-- Tabla -->
     <div class="tabla-scroll">
         <table class="tabla-usuarios">
             <thead>
@@ -44,7 +44,7 @@
             </thead>
 
             <tbody id="tbodyUsuarios">
-                <!-- FILA VISUAL ÚNICA columas -->
+                <!-- Fila columnas -->
                 <tr>
                     <td></td><td></td><td></td><td></td>
                     <td class="col-icono">

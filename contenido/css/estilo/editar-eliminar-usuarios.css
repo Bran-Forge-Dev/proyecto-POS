@@ -1,7 +1,4 @@
-﻿/* =============================== */
-/* ESTRUCTURA GENERAL */
-/* =============================== */
-body {
+﻿body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
@@ -53,9 +50,7 @@ body {
     color: #333;
 }
 
-/* =============================== */
-/* FORMULARIO */
-/* =============================== */
+/* Formulario */
 .form-contenedor {
     width: 90%;
     max-width: 600px;
@@ -64,7 +59,7 @@ body {
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    box-sizing: border-box; /* asegura que padding no rompa el ancho */
+    box-sizing: border-box;
 }
 
 .fila,
@@ -86,25 +81,23 @@ body {
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
-        box-sizing: border-box; /* evita que el padding rompa el ancho */
+        box-sizing: border-box;
     }
 
 /* Campos Teléfono y Fecha con separación */
 .fila-doble {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px; /* separación amplia en escritorio */
+    gap: 25px;
     margin-bottom: 15px;
 }
 
 .sub-fila {
     flex: 1;
-    min-width: 250px; /* solo aplica en escritorio */
+    min-width: 250px;
 }
 
-/* =============================== */
-/* BOTONES */
-/* =============================== */
+/* Botones */
 .botones {
     display: flex;
     justify-content: center;
@@ -130,9 +123,7 @@ body {
         background-color: #bfa12f;
     }
 
-/* =============================== */
-/* RESPONSIVO PARA CELULARES */
-/* =============================== */
+/* Responsivo celulares*/
 @media screen and (max-width: 600px) {
     .encabezado {
         flex-direction: column;
@@ -165,7 +156,7 @@ body {
 
         .fila input,
         .sub-fila input {
-            width: 100%; /* asegura que no se desborden */
+            width: 100%;
         }
 
     .botones {
@@ -181,9 +172,7 @@ body {
     }
 }
 
-/* =============================== */
-/* RESPONSIVO PARA TABLETS */
-/* =============================== */
+/* Responsivo tablets */
 @media screen and (max-width: 768px) {
     .fila-doble {
         flex-direction: column;

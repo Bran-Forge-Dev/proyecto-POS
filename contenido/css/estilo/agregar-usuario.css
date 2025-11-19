@@ -11,13 +11,13 @@ body {
     color: #333;
 }
 
-/* ---------------- ENCABEZADO ---------------- */
+/* Encabezado */
 .encabezado {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 20px;
-    border-bottom: 2px solid #d1a646;
+    padding: 9px 20px;
+    border-bottom: 2px solid #f2c94c;
     position: relative;
 }
 
@@ -25,7 +25,7 @@ body {
     position: absolute;
     left: 15px;
     color: #d1a646;
-    font-size: 28px;
+    font-size: 25px;
     text-decoration: none;
     transition: color .2s ease;
 }
@@ -40,7 +40,7 @@ body {
     letter-spacing: 2px;
 }
 
-/* ---------------- TÍTULO ---------------- */
+/*  Titulo */
 .titulo {
     text-align: center;
     margin: 25px 0;
@@ -48,9 +48,9 @@ body {
     font-weight: 700;
 }
 
-/* ---------------- FORMULARIO ---------------- */
+/* Formulario */
 
-/* CONTENEDOR GENERAL */
+/* Contenedor */
 .form-contenedor {
     width: 80%;
     margin: auto;
@@ -59,7 +59,7 @@ body {
     border-radius: 8px;
 }
 
-/* FILA NORMAL (label + input) */
+/* Fila (label e input) */
 .fila {
     display: flex;
     align-items: center;
@@ -80,9 +80,7 @@ body {
         font-size: 16px;
     }
 
-/* -------------------- */
-/* TELÉFONO + FECHA     */
-/* -------------------- */
+/* Telefono y Fecha */
 
 .fila-doble {
     display: flex;
@@ -91,7 +89,7 @@ body {
 }
 
 .sub-fila {
-    flex: 1; /* cada subfila ocupa la mitad */
+    flex: 1;
     display: flex;
     align-items: center;
 }
@@ -110,9 +108,7 @@ body {
         font-size: 16px;
     }
 
-/* -------------------- */
-/* RESPONSIVE */
-/* -------------------- */
+/* Responsivo */
 
 /* En pantallas pequeñas se apilan */
 @media (max-width: 1000px) {
@@ -140,8 +136,7 @@ body {
     }
 }
 
-
-/* ---------------- BOTONES ---------------- */
+/* Botones */
 
 .botones {
     display: flex;
@@ -174,7 +169,7 @@ body {
     background: #9c5c30;
 }
 
-/* ---------------- SELECT DE ROL ---------------- */
+/* Selector de rol */
 .fila select,
 .sub-fila select {
     flex: 1;
@@ -182,6 +177,6 @@ body {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
-    min-width: 250px; /* 🔥 AQUÍ SE HACE MÁS LARGO */
+    min-width: 250px;
 }
 

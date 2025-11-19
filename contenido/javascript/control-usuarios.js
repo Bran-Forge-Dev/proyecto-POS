@@ -1,11 +1,7 @@
-﻿// ===============================
-// Array de usuarios en memoria y persistencia
-// ===============================
+﻿// Array de usuarios en memoria
 let listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-// ===============================
 // Función para actualizar la tabla
-// ===============================
 function actualizarTablaUsuarios() {
     const tbody = document.getElementById("tbodyUsuarios");
     tbody.innerHTML = "";
@@ -36,9 +32,7 @@ function actualizarTablaUsuarios() {
     console.log("Usuarios mostrados en tabla:", listaUsuarios);
 }
 
-// ===============================
-// Función opcional para eliminar usuario desde JS (si se quiere usar local)
-// ===============================
+// Función para eliminar usuario desde JS
 function eliminarUsuario(index) {
     if (confirm("¿Deseas eliminar este usuario?")) {
         listaUsuarios.splice(index, 1);
@@ -47,9 +41,7 @@ function eliminarUsuario(index) {
     }
 }
 
-// ===============================
-// Función opcional para editar usuario desde JS (si se quiere usar local)
-// ===============================
+// Función para editar usuario desde JS
 function editarUsuario(index) {
     const usuario = listaUsuarios[index];
     const nuevaCuenta = prompt("Editar cuenta:", usuario.cuenta);
@@ -71,9 +63,7 @@ function editarUsuario(index) {
     }
 }
 
-// ===============================
 // Ejecutar al cargar la página
-// ===============================
 window.addEventListener("DOMContentLoaded", () => {
     actualizarTablaUsuarios();
 });

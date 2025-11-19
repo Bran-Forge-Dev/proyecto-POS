@@ -21,7 +21,7 @@
             <div class="logo">NeoVenta</div>
         </header>
 
-        <!-- Título principal -->
+        <!-- Titulo principal -->
         <h2 class="titulo">Catálogos</h2>
 
         <main class="catalogos-container">

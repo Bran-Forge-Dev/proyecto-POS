@@ -48,7 +48,7 @@
       </main>
 
       <footer>
-        <i class="fas fa-user-cog"></i>
+        <i class="las la-user-cog"></i>
       </footer>
 
         <script src="/contenido/javascript/menu.js"></script>

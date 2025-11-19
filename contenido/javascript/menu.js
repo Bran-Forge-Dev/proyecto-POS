@@ -8,10 +8,10 @@
 
             const confirmar = confirm("¿Seguro que deseas cerrar sesión?");
             if (confirmar) {
-                // Si el usuario confirma, redirige al enlace original
+                // Si el usuario confirma, redirige al login
                 window.location.href = logoutLink.href;
             }
-            // Si el usuario cancela, simplemente no pasa nada
+            // Si el usuario cancela, no pasa nada
         });
     }
 });

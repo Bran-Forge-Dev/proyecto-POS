@@ -1,15 +1,11 @@
-﻿// ===============================
-// Lista de roles disponibles
-// ===============================
+﻿// Lista de roles disponibles
 const rolesDisponibles = [
     "Administrador",
     "Vendedor",
     "Cliente"
 ];
 
-// ===============================
 // Cargar roles en el <select>
-// ===============================
 function cargarRoles() {
     const selectRol = document.getElementById("rol");
     selectRol.innerHTML = "";
@@ -22,17 +18,13 @@ function cargarRoles() {
     });
 }
 
-// ===============================
 // Obtener parámetro "index" desde la URL
-// ===============================
 function obtenerIndex() {
     const params = new URLSearchParams(window.location.search);
     return parseInt(params.get("index"));
 }
 
-// ===============================
 // Cargar datos del usuario al abrir la página
-// ===============================
 function cargarDatosUsuario() {
     const index = obtenerIndex();
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
@@ -47,7 +39,7 @@ function cargarDatosUsuario() {
     document.getElementById("cuenta").value = usuarios[index].cuenta;
     document.getElementById("clave").value = usuarios[index].clave;
 
-    // ❗ Primero cargamos los roles, luego seleccionamos el que tiene el usuario
+    // Primero se cargan los roles, luego seleccionamos el que tiene el usuario
     cargarRoles();
     document.getElementById("rol").value = usuarios[index].rol;
 
@@ -56,9 +48,7 @@ function cargarDatosUsuario() {
     document.getElementById("correo").value = usuarios[index].correo;
 }
 
-// ===============================
 // Guardar cambios
-// ===============================
 function guardarUsuarioEditado(e) {
     e.preventDefault();
 
@@ -87,7 +77,5 @@ function guardarUsuarioEditado(e) {
     window.location.href = "wfControlUsuarios.aspx";
 }
 
-// ===============================
-// Ejecutar carga inicial
-// ===============================
+// Ejecutar carga al inicio
 window.onload = cargarDatosUsuario;

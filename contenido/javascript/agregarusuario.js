@@ -1,20 +1,14 @@
-﻿// ===============================
-// Array en memoria y persistencia
-// ===============================
+﻿// Array en memoria y guardado
 let listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-// ===============================
 // Lista de roles disponibles
-// ===============================
 const rolesDisponibles = [
     "Administrador",
     "Vendedor",
     "Cliente"
 ];
 
-// ===============================
 // Cargar roles en el combo box
-// ===============================
 function cargarRoles() {
     const selectRol = document.getElementById("rol");
 
@@ -32,9 +26,7 @@ function cargarRoles() {
 // Ejecutar al cargar la página
 document.addEventListener("DOMContentLoaded", cargarRoles);
 
-// ===============================
 // Guardar usuario
-// ===============================
 document.getElementById("formUsuario").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -55,9 +47,7 @@ document.getElementById("formUsuario").addEventListener("submit", function (even
         return;
     }
 
-    // =======================================
-    // VERIFICAR DUPLICADOS
-    // =======================================
+    // Verificar que no se duplique
     const existeCuenta = listaUsuarios.some(u => u.cuenta.toLowerCase() === cuenta.toLowerCase());
     const existeCorreo = listaUsuarios.some(u => u.correo.toLowerCase() === correo.toLowerCase());
 

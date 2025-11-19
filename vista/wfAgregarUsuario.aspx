@@ -9,7 +9,7 @@
 <link href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- ENCABEZADO -->
+    <!-- Encabezado -->
     <header class="encabezado">
         <a href="wfControlUsuarios.aspx" class="btn-regresar">
             <i class="las la-arrow-left"></i>
@@ -17,10 +17,10 @@
         <h1 class="logo">NeoVenta</h1>
     </header>
 
-    <!-- TÍTULO -->
+    <!-- Titulo -->
     <h2 class="titulo">Agregar Usuario</h2>
 
-    <!-- FORMULARIO -->
+    <!-- Formulario -->
     <div class="form-contenedor">
         <form id="formUsuario">
             <div class="fila">

@@ -20,7 +20,7 @@ header {
     padding: 25px 40px;
     border-bottom: 2px solid #c79a32;
     background-color: #fff; /* asegura contraste */
-    position: relative; /* habilita posicionamiento absoluto si lo necesitas */
+    position: relative;
 }
 
 .logo {
@@ -31,7 +31,7 @@ header {
 
 .logout {
     font-weight: bold;
-    color: #c70000; /* rojo intenso */
+    color: #c70000;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease, transform 0.2s ease;
