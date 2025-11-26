@@ -8,7 +8,7 @@
 .encabezado {
     background-color: #f4f4f4;
     color: #000;
-    padding: 5px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,14 +26,11 @@
         font-size: 25px;
         border: none;
         background: transparent;
+        transition: color 0.2s ease;
     }
 
 .btn-regresar:hover {
     color: #c59834;
-}
-
-.btn-regresar {
-    transition: color 0.2s ease;
 }
 
 .logo {
@@ -53,7 +50,7 @@
 /* Formulario */
 .form-contenedor {
     width: 90%;
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
     background-color: #fff;
     padding: 25px;
@@ -77,14 +74,14 @@
 
     .fila input,
     .sub-fila input {
-        width: 100%; /* siempre ocupa todo el ancho disponible */
+        width: 100%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
     }
 
-/* Campos Teléfono y Fecha con separación */
+/* Campos */
 .fila-doble {
     display: flex;
     flex-wrap: wrap;
@@ -100,8 +97,8 @@
 /* Botones */
 .botones {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-end;
+    gap: 18px;
     margin-top: 20px;
     flex-wrap: wrap;
 }
@@ -123,7 +120,7 @@
         background-color: #bfa12f;
     }
 
-/* Responsivo celulares */
+/* Responsivo */
 @media screen and (max-width: 600px) {
     .encabezado {
         flex-direction: column;
@@ -142,22 +139,17 @@
 
     .form-contenedor {
         padding: 15px;
-        width: 95%; /* más margen interno */
+        width: 95%;
     }
 
     .fila-doble {
         flex-direction: column;
-        gap: 15px; /* separación vertical */
+        gap: 15px;
     }
 
     .sub-fila {
-        min-width: 100%; /* fuerza ancho completo */
+        min-width: 100%;
     }
-
-        .fila input,
-        .sub-fila input {
-            width: 100%;
-        }
 
     .botones {
         flex-direction: column;
@@ -172,7 +164,6 @@
     }
 }
 
-/* Responsivo para tablets */
 @media screen and (max-width: 768px) {
     .fila-doble {
         flex-direction: column;
@@ -180,13 +171,8 @@
     }
 
     .sub-fila {
-        min-width: 100%; /* ancho completo */
+        min-width: 100%;
     }
-
-        .fila input,
-        .sub-fila input {
-            width: 100%;
-        }
 
     .botones {
         flex-direction: column;

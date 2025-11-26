@@ -123,7 +123,7 @@
         background-color: #bfa12f;
     }
 
-/* Responsivo celulares*/
+/* Responsivo */
 @media screen and (max-width: 600px) {
     .encabezado {
         flex-direction: column;
@@ -142,16 +142,16 @@
 
     .form-contenedor {
         padding: 15px;
-        width: 95%; /* más margen interno en móviles */
+        width: 95%; /* más margen interno */
     }
 
     .fila-doble {
         flex-direction: column;
-        gap: 15px; /* separación vertical en móviles */
+        gap: 15px; /* separación vertical */
     }
 
     .sub-fila {
-        min-width: 100%; /* fuerza ancho completo en móviles */
+        min-width: 100%; /* fuerza ancho completo*/
     }
 
         .fila input,
@@ -172,7 +172,6 @@
     }
 }
 
-/* Responsivo tablets */
 @media screen and (max-width: 768px) {
     .fila-doble {
         flex-direction: column;
@@ -180,7 +179,7 @@
     }
 
     .sub-fila {
-        min-width: 100%; /* también ancho completo en tablets */
+        min-width: 100%; /* también ancho completo */
     }
 
         .fila input,

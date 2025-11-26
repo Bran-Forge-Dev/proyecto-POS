@@ -70,6 +70,7 @@
     <Content Include="contenido\css\estilo\agregar-usuario.css" />
     <Content Include="contenido\css\estilo\catalogos.css" />
     <Content Include="contenido\css\estilo\control-usuarios.css" />
+    <Content Include="contenido\css\estilo\editar-eliminar-productos.css" />
     <Content Include="contenido\css\estilo\editar-eliminar-usuarios.css" />
     <Content Include="contenido\css\estilo\eliminar-usuarios.css" />
     <Content Include="contenido\css\estilo\line-awesome.css">
@@ -77,25 +78,34 @@
     </Content>
     <Content Include="contenido\css\estilo\login.css" />
     <Content Include="contenido\css\estilo\menu.css" />
+    <Content Include="contenido\css\estilo\productos.css" />
     <Content Include="contenido\css\estilo\punto_venta.css" />
     <Content Include="contenido\css\estilo\ventas.css" />
     <Content Include="contenido\imagenes\fondo.jpg" />
+    <Content Include="contenido\javascript\agregarproductos.js" />
     <Content Include="contenido\javascript\agregarusuario.js" />
     <Content Include="contenido\javascript\control-usuarios.js" />
+    <Content Include="contenido\javascript\editarproductos.js" />
     <Content Include="contenido\javascript\editarusuario.js" />
+    <Content Include="contenido\javascript\eliminarproducto.js" />
     <Content Include="contenido\javascript\eliminarusuario.js" />
     <Content Include="contenido\javascript\jquery-3.7.1.js" />
     <Content Include="contenido\javascript\menu.js" />
+    <Content Include="contenido\javascript\productos.js" />
     <Content Include="contenido\javascript\puntoventa.js" />
     <Content Include="contenido\javascript\script.js" />
     <Content Include="contenido\javascript\wfsuma.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="vista\wfAgregarProducto.aspx" />
     <Content Include="vista\wfAgregarUsuario.aspx" />
     <Content Include="vista\wfCatalogos.aspx" />
     <Content Include="vista\wfControlUsuarios.aspx" />
+    <Content Include="vista\wfEditarProducto.aspx" />
     <Content Include="vista\wfEditarUsuario.aspx" />
+    <Content Include="vista\wfEliminarProducto.aspx" />
     <Content Include="vista\wfEliminarUsuario.aspx" />
     <Content Include="vista\wfMenu.aspx" />
+    <Content Include="vista\wfProductos.aspx" />
     <Content Include="vista\wfPuntodeVenta.aspx" />
     <Content Include="vista\wfVentas.aspx" />
     <Content Include="Web.config" />
@@ -116,6 +126,13 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vista\wfAgregarProducto.aspx.cs">
+      <DependentUpon>wfAgregarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vista\wfAgregarProducto.aspx.designer.cs">
+      <DependentUpon>wfAgregarProducto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="vista\wfAgregarUsuario.aspx.cs">
       <DependentUpon>wfAgregarUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -137,12 +154,26 @@
     <Compile Include="vista\wfControlUsuarios.aspx.designer.cs">
       <DependentUpon>wfControlUsuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="vista\wfEditarProducto.aspx.cs">
+      <DependentUpon>wfEditarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vista\wfEditarProducto.aspx.designer.cs">
+      <DependentUpon>wfEditarProducto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="vista\wfEditarUsuario.aspx.cs">
       <DependentUpon>wfEditarUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="vista\wfEditarUsuario.aspx.designer.cs">
       <DependentUpon>wfEditarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vista\wfEliminarProducto.aspx.cs">
+      <DependentUpon>wfEliminarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vista\wfEliminarProducto.aspx.designer.cs">
+      <DependentUpon>wfEliminarProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="vista\wfEliminarUsuario.aspx.cs">
       <DependentUpon>wfEliminarUsuario.aspx</DependentUpon>
@@ -157,6 +188,13 @@
     </Compile>
     <Compile Include="vista\wfMenu.aspx.designer.cs">
       <DependentUpon>wfMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vista\wfProductos.aspx.cs">
+      <DependentUpon>wfProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vista\wfProductos.aspx.designer.cs">
+      <DependentUpon>wfProductos.aspx</DependentUpon>
     </Compile>
     <Compile Include="vista\wfPuntodeVenta.aspx.cs">
       <DependentUpon>wfPuntodeVenta.aspx</DependentUpon>

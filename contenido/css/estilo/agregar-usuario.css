@@ -5,13 +5,11 @@
     font-family: 'Inter', sans-serif;
 }
 
-/* Fondo */
 body {
     background: white;
     color: #333;
 }
 
-/* Encabezado */
 .encabezado {
     display: flex;
     justify-content: center;
@@ -40,7 +38,6 @@ body {
     letter-spacing: 2px;
 }
 
-/*  Titulo */
 .titulo {
     text-align: center;
     margin: 25px 0;
@@ -50,7 +47,6 @@ body {
 
 /* Formulario */
 
-/* Contenedor */
 .form-contenedor {
     width: 80%;
     margin: auto;
@@ -110,7 +106,6 @@ body {
 
 /* Responsivo */
 
-/* En pantallas pequeñas se apilan */
 @media (max-width: 1000px) {
 
     .fila,
@@ -133,6 +128,24 @@ body {
 
     .fila-doble {
         gap: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .caja {
+        padding: 25px;
+    }
+
+    .fila label,
+    .sub-fila label {
+        text-align: left;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .fila input,
+    .sub-fila input {
+        max-width: 100%;
     }
 }
 
@@ -180,3 +193,30 @@ body {
     min-width: 250px;
 }
 
+.caja {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 45px 60px;
+    border: 3px solid #d1a646;
+    border-radius: 6px;
+}
+
+.fila,
+.sub-fila {
+    justify-content: center;
+}
+
+    .fila label,
+    .sub-fila label {
+        width: 220px;
+        text-align: right;
+        margin-right: 15px;
+    }
+
+    /* Inputs más grandes */
+    .fila input,
+    .sub-fila input,
+    .fila select {
+        max-width: 450px;
+    }

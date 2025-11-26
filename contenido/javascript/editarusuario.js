@@ -18,7 +18,7 @@ function cargarRoles() {
     });
 }
 
-// Obtener parámetro "index" desde la URL
+// Obtener el index
 function obtenerIndex() {
     const params = new URLSearchParams(window.location.search);
     return parseInt(params.get("index"));

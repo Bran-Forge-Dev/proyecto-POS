@@ -1,4 +1,4 @@
-﻿// Obtener parámetro "index" desde la URL
+﻿// Obtener el index del usuario seleccionado
 function obtenerIndex() {
     const params = new URLSearchParams(window.location.search);
     return parseInt(params.get("index"));
@@ -15,7 +15,7 @@ function cargarDatosUsuario() {
         return;
     }
 
-    // Llenar inputs (están deshabilitados)
+    // Llenar inputs, no editables, solo visualización
     document.getElementById("cuenta").value = usuarios[index].cuenta;
     document.getElementById("clave").value = usuarios[index].clave;
     document.getElementById("rol").value = usuarios[index].rol;

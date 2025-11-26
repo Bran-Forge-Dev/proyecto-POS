@@ -40,7 +40,7 @@
                     <i class="las la-shopping-cart fa-2x"></i>
                 </div>
                 <p>Dar alta/baja/editar productos<br/>Visualización de productos</p>
-                <a href="#" class="btn-card">Productos</a>
+                <a href="wfProductos.aspx" class="btn-card">Productos</a>
             </div>
 
             <!-- Tarjeta Proveedor -->
